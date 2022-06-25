@@ -1,0 +1,40 @@
+.app {
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: rgba(4, 1, 17, 1);
+
+  svg {
+    height: 30vmin;
+    pointer-events: none;
+    margin-bottom: 2rem;
+    animation: app-logo-spin infinite 20s linear;
+  }
+
+  > div {
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+}
+
+@keyframes app-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
